@@ -8,9 +8,6 @@ def myfunc():
     position = "Web Developer"
     print("Michael is a " + position)
 
-
-myfunc()
-
 # Print out Global Variable
 print("Michael is a " + position)
 
@@ -33,6 +30,17 @@ aRange = range(9)
 print(type(aList))
 print(type(aTuple))
 print(type(aRange))
+
+for i in aList:
+    print(i)
+    if i == "eggs":
+        break
+adj = ["1", "2", "3"]
+fruits = ["apple", "banana", "cherry"]
+
+for x in adj:
+    for y in fruits:
+        print(x, y)
 
 # Mapping
 aDictionary = {"name": "mike", "age": 35}
@@ -67,3 +75,31 @@ name = "bubbles"
 
 myItem = "I want {} {} for the {} dogs that I have"
 print(myItem.format(quant, name, number))
+
+# For Loop
+for i in range(5):
+    print("hello")
+
+# Measuring Strings
+for i in aList:
+    print(i, len(i))
+
+# Read/Write Files
+with open('pong.py') as file:
+    read_data = file.read()
+# file.closed Check that its closed
+
+# keyboard input with if and else
+kbdInput = int(input("Please Enter an Integer: "))
+
+if kbdInput < 32:
+    kbdInput = 32
+    print("Integer is now: ", kbdInput)
+elif kbdInput > 42:
+    kbdInput = 42
+    print("Integer is now: ", kbdInput)
+else:
+    print(kbdInput, "Hello.")
+    myfunc()
+
+

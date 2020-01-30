@@ -38,14 +38,14 @@ print(min(bug), max(bug))
 print(len(bug)) # from 1 because no such thing as 0 length
 
 # List Sequence
-myList = [8,5] * 3
+myList = [8, 5] * 3
 print(myList)
 
-myListTwo = [7,8,3]
+myListTwo = [7, 8, 3]
 for item in myListTwo:
     print(item * 2)
 
-anotherList = [2,5,8]
+anotherList = [2, 5, 8]
 print(sum(anotherList))
 print(sum(anotherList[-2:]))
 
